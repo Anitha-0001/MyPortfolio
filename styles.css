@@ -269,8 +269,9 @@ body{
     }
     #navbar li a{
         font-size: 20px;
-         
+        padding: 5px;
         border-right: 1px solid var(--blue3);
+        overflow: hidden;
     }
     .theory li{
         font-size: 10px;
