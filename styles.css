@@ -260,7 +260,7 @@ body{
 .footer .heart{
     color: var(--white);
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 480px){
     #navbar{
         display: flex;
     }
