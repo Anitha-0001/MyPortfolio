@@ -1,11 +1,11 @@
 :root{ 
-    --blue1: #011936 ;
+    --blue1:#011936 ;
     --blue2:#2D3A4C;
     --blue3:#588a8d;
     --white:#ffffff;
     --font1: 'Barriecito', cursive;
     --font2: 'Preahvihear', sans-serif;
-    --bg:url("assets/conf.png");
+    
 }
 *,::before,::after{
     margin:0;
@@ -260,19 +260,16 @@ body{
 .footer .heart{
     color: var(--white);
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width:720px){
     #navbar{
         display: flex;
-    }
-    #navbar img{
-        padding-left: 0px;
+    }    
     #navbar h1{
-        padding-left: 0px;
         font-size: 20px;
     }
     #navbar li a{
         font-size: 20px;
-        padding : 5px;
+        padding: 5px;
         border-right: 1px solid var(--blue3);
     }
     .theory li{
@@ -282,11 +279,9 @@ body{
     #home{
         display: flex;
         flex-direction: column;
-         
     }
     .profile img{
          margin: 100px 50px 0 50px;
-         
     }
     .theory h1{
          
