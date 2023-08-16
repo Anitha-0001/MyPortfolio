@@ -1,11 +1,11 @@
 :root{ 
     --blue1: #011936 ;
     --blue2:#2D3A4C;
-    --blue3:#6695a3;
+    --blue3:#588a8d;
     --white:#ffffff;
     --font1: 'Barriecito', cursive;
     --font2: 'Preahvihear', sans-serif;
-     
+    --bg:url("assets/conf.png");
 }
 *,::before,::after{
     margin:0;
@@ -58,13 +58,13 @@ body{
 }
 #home{
     display: flex;
-    margin: 2% 8% ;
-    justify-content: space-around; 
+    margin: 0.3% 8% ;
+    justify-content: space-around;     
 }
 .profile img{
     margin:200px 50px;
     border-radius: 50%;
-    border: 1px solid var(--blue3);
+    border: 1px  solid var(--blue3);
 }
 .theory{
     color: var(--blue3);
@@ -232,8 +232,8 @@ body{
     justify-content: space-around;
     list-style-type: none;
     margin: 2% 7%;
-    
 }
+ 
 #contact li a{
     text-decoration: none;
     font-size: 22px;
@@ -259,4 +259,75 @@ body{
 }
 .footer .heart{
     color: var(--white);
+}
+@media screen and (max-width:720px){
+    #navbar{
+        display: flex;
+    }
+    #navbar h1{
+        font-size: 20px;
+    }
+    #navbar li a{
+        font-size: 20px;
+        padding : 5px;
+        border-right: 1px solid var(--blue3);
+    }
+    .theory li{
+        font-size: 10px;
+        padding:5px;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+         
+    }
+    .profile img{
+        margin-top:100px;
+        margin-bottom: 0;
+         
+    }
+    .theory h1{
+         
+        font-size: 35px;
+    }
+    .theory p{
+        font-size: 15px;
+    }
+    #education h1,#achievements h1,#certifications h1,#clgprojects h1,#about #h, #personalprojects h1,#contact h1{
+        font-size: 30px;
+    }
+    .edu{
+        font-size: 10px;
+    }
+    .eduin{
+        padding: 15px 50px;
+    }
+    .ach, .certi, .clg, .per{
+        font-size: 12px;
+        padding: 15px 20px;
+        margin: auto;
+    } 
+    .abt{
+        display: flex;
+        flex-direction: column;
+    }
+    .abt1 h1{
+        font-size: 15px;
+    }
+    .abt1 p{
+        font-size: 10px;
+    }
+    #contact ul{
+        align-items: center;
+         
+    }
+    #contact li a {
+        font-size: 12px;
+    }
+    #cont i{
+        font-size: 12px; 
+    }
+    .footer{
+        font-size: 15px;
+    }
 }
